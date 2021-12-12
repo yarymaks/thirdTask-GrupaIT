@@ -1,0 +1,88 @@
+.quoteWrapper {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  margin: 20px auto 0;
+  overflow: hidden;
+}
+.text {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 128, 172, 1) 0%,
+    rgba(0, 128, 172, 1) 70%,
+    rgba(0, 128, 172, 0) 70.3%
+  );
+  position: relative;
+  margin: 0;
+  color: white;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.text .textContainer {
+  height: 100%;
+  font-size: 25px;
+  line-height: 1.25;
+  margin: 50px 40px 40px 40px;
+  text-align: center;
+  font-style: italic;
+  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.quoteWrapper::before {
+  content: '\201C';
+  font-size: 270px;
+  height: 82px;
+  line-height: 0.78;
+  line-height: 1;
+  position: absolute;
+  top: -30px;
+  left: 35px;
+  z-index: 1;
+  font-family: sans-serif, serif;
+  color: #ccc;
+  opacity: 0.9;
+}
+
+.author {
+  margin-top: 25px;
+}
+
+.buttons {
+  text-align: center;
+}
+.newQuote {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 5px;
+  border-radius: 50%;
+}
+
+.newQuote:hover,
+.newQuote:focus {
+  color: white;
+  background-color: aqua;
+}
+
+.pagination {
+  width: 200px;
+  padding: 5px 0;
+  border-radius: 20px;
+}
+
+.pagination:hover,
+.pagination:focus {
+  color: white;
+  background-color: brown;
+}
+
+.pagination:not(:last-child) {
+  margin-right: 10px;
+}
